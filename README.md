@@ -13,7 +13,7 @@ A Python implementation of an adjustable resource manager for MPI applications t
 ## Execution
 
 The main module of this program has been designed as a command line interface (CLI). It takes two arguments:
-1. ***<-c,-config>***: A yaml configuration file that contains the user's preferences. An example is shown below. This is a required parameter for the commence of the execution. In order to run, simply type: `python3 main.py -c path/to/config`.
+1. ***<-c,-config>***: A yaml configuration file that contains the user's preferences. An example is shown below. This is a required parameter for commencing the execution. In order to run, simply type: `python3 main.py -c path/to/config`.
 <p align="center">
   <img width="600" height="450" src="https://user-images.githubusercontent.com/57871211/162432383-062c3ea8-39a5-4f92-83c5-259de3a4dd09.png">
 </p>
