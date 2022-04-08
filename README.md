@@ -13,12 +13,25 @@ A Python implementation of an adjustable resource manager for MPI applications t
 ## Execution
 
 The main module of this program has been designed as a command line interface (CLI). It takes two arguments:
-1. **<-c,-config>**: A yaml configuration file that contains the user's preferences. An example is shown below. This is a required parameter for the commence of the execution. In order to run, simply type: `python3 main.py -c path/to/config`.
+1. ***<-c,-config>***: A yaml configuration file that contains the user's preferences. An example is shown below. This is a required parameter for the commence of the execution. In order to run, simply type: `python3 main.py -c path/to/config`.
+<p align="center">
+  <img width="600" height="450" src="https://user-images.githubusercontent.com/57871211/162432383-062c3ea8-39a5-4f92-83c5-259de3a4dd09.png">
+</p>
 
-2. **<-i,-info>**: An optional argument that can take one of two values:
+2. ***<-i,-info>***: An optional argument that can take one of two values:
     1. **queue**: Display information about the cluster's current jobs.
-    2. **state**: Display information about the cluster's nodes.
+    <p align="center">
+      <img width="550" height="150" src="https://user-images.githubusercontent.com/57871211/162433778-e1592b6d-26d4-4775-b035-5197cdd2f226.png">
+    </p>
+    
+    3. **state**: Display information about the cluster's nodes.
+    <p align="center">
+      <img width="550" height="400"src="https://user-images.githubusercontent.com/57871211/162433927-d3ba862f-c1f2-42b8-9ed2-e3b2407421f4.png">
+    </p>
 
 ## Usage within a cluster
 
 After being submitted as a batch job, the main program assigns MPI tasks across a number of bound nodes. These tasks are part of a queue consisting of applications from the Nas Parallel Benchmarks (NPB) suite.
+<p align="center">
+      <img width="600" height="400" src="https://user-images.githubusercontent.com/57871211/162434755-17e2fa8a-8184-4b59-adc1-625f7fb2ea22.png">
+</p>
