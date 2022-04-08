@@ -1,0 +1,21 @@
+Version: 1.0
+
+Applications:
+  Path: /home/users/apapavas/test/NPB3.4/NPB3.4-MPI/bin
+  Queue: /home/users/apapavas/rmanager/queue
+
+Scheduling:
+  Algorithm: FCFS
+  Backfilling: 0
+
+Nodes: 8
+
+Sockets: 2
+Cores: 4
+
+Allocation:
+  Policy: compact
+
+Log: /home/users/apapavas/rmanager/log/fcfs
+
+State: /home/users/apapavas/rmanager/state

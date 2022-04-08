@@ -1,0 +1,22 @@
+Version: 1.0
+
+Applications:
+  Path: /home/users/apapavas/test/NPB3.4/NPB3.4-MPI/bin
+  Queue: /home/users/apapavas/rmanager/queue
+  Heatmap: /home/users/apapavas/rmanager/heatmap
+
+Scheduling:
+  Algorithm: FCFS
+  Backfilling: 0
+
+Nodes: 8
+
+Sockets: 2
+Cores: 4
+
+Allocation:
+  Policy: strip
+
+Log: /home/users/apapavas/rmanager/log/strip/fcfs
+
+State: /home/users/apapavas/rmanager/state
