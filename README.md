@@ -1,13 +1,13 @@
 ## Description
-A Python implementation of an adjustable resource manager for MPI applications that run on a computer cluster. It consists of:
+A Python implementation of an adjustable resource manager for MPI applications of a computer cluster. It consists of:
   - A *scheduling* module supporting two algorithms:
     1. ***FCFS***: Favours old jobs.
-    2. ***WFP3***: Favours short/old jobs while taking in account their respective size.
+    2. ***WFP3***: Favours short/old jobs while taking into account their respective size.
   - An optional *backfilling* module.
   - A *resource allocation* module implementing three policies: 
     1. ***Compact***: Use all the cores of a node on one app.
     2. ***Spare***: Use half the cores of a node on one app (unfavored).
-    3. ***Strip (co-scheduling)***: Split the cores of a node between two apps. Can be improved with the inclusion of a heatmap, used to indicate apps that match well together.
+    3. ***Strip (co-scheduling)***: Split the cores of a node between two apps. Can be improved with the inclusion of a heatmap, used to identify apps that match well together.
   - The *main* module that glues all of the above.
 
 ## Execution
