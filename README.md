@@ -33,5 +33,5 @@ The main module of this program has been designed as a command line interface (C
 
 After being submitted as a batch job, the main program assigns MPI tasks across a number of bound nodes. These tasks are part of a queue consisting of applications from the Nas Parallel Benchmarks (NPB) suite.
 <p align="center">
-      <img width="600" height="400" src="https://user-images.githubusercontent.com/57871211/162434755-17e2fa8a-8184-4b59-adc1-625f7fb2ea22.png">
+      <img width="650" height="450" src="https://user-images.githubusercontent.com/57871211/162578959-caa576a3-2b52-4de7-aa06-ac33d7f40ec4.png">
 </p>
