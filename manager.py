@@ -109,7 +109,7 @@ class Manager:
         out = job.app + '.' + str(job.id) + '.' + 'o'
         err = job.app + '.' + str(job.id) + '.' + 'e'
         subprocess.call('echo '' > ' + self.piddir + '/' + str(job.id), shell = True)
-        mpirun = 'mpirun -H ' + hosts + ' -np ' + str(job.procs) + ' -v --report-bindings --timestamp-output --mca btl self,tcp -rf ' + \
+        mpirun = 'mpirun -H ' + hosts + ' -np ' + str(job.procs) + ' -v --report-bindings --timestamp-output -rf ' + \
            rankfile + ' ' + self.appdir + '/' + job.app + ' 2>> ' + self.logdir + '/' + \
            err + ' 1>> ' + self.logdir + '/' + out + ' && '
         mpirun += 'rm' + ' ' + self.piddir + '/' + str(job.id) + '\n'
