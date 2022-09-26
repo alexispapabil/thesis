@@ -35,3 +35,7 @@ After being submitted as a batch job, the main program assigns MPI tasks across 
 <p align="center">
       <img width="650" height="450" src="https://user-images.githubusercontent.com/57871211/162578959-caa576a3-2b52-4de7-aa06-ac33d7f40ec4.png">
 </p>
+
+## Dependencies
+
+In order to run the code, Python's PyYAML framework must be installed. This can be done with the pip package installer by typing `pip install pyyaml`. Full code dependencies can be found in the **environment.yml** file which has been exported from the miniconda package manager and can be used locally with the `conda env create -f environment.yml` command.
